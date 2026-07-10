@@ -1,0 +1,39 @@
+Enable compute engine -> Create instance
+cloud run
+cloud build
+Enable APIs
+
+
+Assign Roles
+------------
+1.(Project-ID)-compute@developer.gserviceaccount.com
+
+Roles : 
+BQ Data Editor
+BQ Data Viewer
+BQ Job User
+BQ User
+Editor
+Gemini Data Analytics Data Agent User
+Gemini for Google Cloud User
+MCP Tool User
+Storage Object Viewer
+
+2. (if created) (auto)
+principalSet://agents.global.proj-(Project-ID).system.id.goog/attribute.platformContainer/aiplatform/projects/(Project-ID)
+
+Roles:
+Vertex AI Agent Engine - Agent Default Access Role
+
+3. google id
+
+Roles:
+Owner
+
+4. vertex-express@gen-ai-ac.iam.gserviceaccount.com
+
+Roles:
+Agent Platform Express User(Beta)
+BQ Job User
+Gemini Data Analytics Data Agent User
+MCP Tool User
