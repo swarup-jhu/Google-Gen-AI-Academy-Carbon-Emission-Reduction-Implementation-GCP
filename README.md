@@ -1,5 +1,3 @@
-# Google-Gen-AI-Academy-Carbon-Emission-Reduction-Implementation-GCP
-
 # BigQuery - Gemini-2.5-Flash -- Flask Chatbot --Carbon Emission Reduction Application for Google GEN AI Academy – Implementation On Google Cloud
 
 A Flask-based chatbot that answers questions using a tiered intelligence pipeline:
