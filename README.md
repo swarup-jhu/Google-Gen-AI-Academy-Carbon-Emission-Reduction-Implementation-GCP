@@ -1,0 +1,1 @@
+# Google-Gen-AI-Academy-Carbon-Emission-Reduction-Implementation-GCP
