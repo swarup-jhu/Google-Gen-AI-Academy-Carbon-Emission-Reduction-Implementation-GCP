@@ -1,0 +1,6 @@
+flask
+requests
+google-cloud-bigquery
+google-genai
+gunicorn
+tavily-python
