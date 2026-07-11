@@ -132,7 +132,7 @@ Start the application with:
 python agent.py
 ```
 
-The app runs on port `5000` by default, or the value in the `PORT` environment variable.
+The app runs on port `5000` by default as in agent.py, or the value in the `PORT` environment variable if set any.
 
 Open the app in your browser and send a message through the chat UI.
 
@@ -276,7 +276,8 @@ Try questions like:
 - “Show me the schema of the carbon table.”
 - “Give me a preview of the dataset.”
 - “What SQL can summarize emissions by month?”
-- “Explain carbon footprint in simple terms.”
+- "What is total carbon emission for our shipment of last month? ”
+- "Show total carbon emission for our last mile delivery." 
 - “Find recent articles about carbon reporting.”
 
 The first set should favor BigQuery, while general knowledge questions can fall back to Tavily and Gemini.
@@ -299,19 +300,12 @@ When an error occurs, the `/status/<chat_id>` response is updated with an `error
 ## Security Notes
 
 - Never commit `.env` or service account files to GitHub.
-- Keep `FLASK_SECRET_KEY` private.
-- Review any SQL execution carefully before exposing the app to untrusted users.
+- Keep `API-KEY` private.
 - Use a production WSGI server for deployment instead of Flask’s debug server.
 
 ---
 
 ## Deployment
-
-For production deployments, use a WSGI server such as Gunicorn:
-
-```bash
-gunicorn app:app --bind 0.0.0.0:5000
-```
 
 Recommended deployment checklist:
 - set environment variables in the hosting platform,
