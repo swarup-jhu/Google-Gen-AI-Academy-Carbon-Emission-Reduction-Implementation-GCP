@@ -127,7 +127,7 @@ TAVILY_API_KEY=your-tavily-api-key
 Start the application with:
 
 ```bash
-python app.py
+python agent.py
 ```
 
 The app runs on port `5000` by default, or the value in the `PORT` environment variable.
