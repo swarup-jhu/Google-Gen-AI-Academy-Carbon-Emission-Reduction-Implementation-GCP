@@ -112,6 +112,8 @@ GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
 GOOGLE_CLOUD_LOCATION=us-central1
 TAVILY_API_KEY=your-tavily-api-key
 ```
+Flask generally works without api key. 
+Download GOOGLE_APPLICATION_CREDENTIALS after allowing all necessary roles to Compute Engine Service as a json file and save it locally. Mention the json file while creating DOCKER container. 
 
 ### Variable Details
 
@@ -133,6 +135,8 @@ python agent.py
 The app runs on port `5000` by default, or the value in the `PORT` environment variable.
 
 Open the app in your browser and send a message through the chat UI.
+
+But default port in GCP is 8080. If you use any other port, update in GCP. 
 
 ---
 
@@ -360,3 +364,5 @@ Add your preferred license here, such as MIT or Apache 2.0.
 - Google BigQuery for structured data access.
 - Tavily for web search and answer retrieval.
 - Gemini for model fallback and reasoning.
+
+
